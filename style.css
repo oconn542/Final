@@ -8,7 +8,7 @@ body {
 
 nav {
     margin: 40px auto 0 auto;
-    width: 400px;
+    width: 500px;
     border-radius: 50px;
     background: #212431;
 }
@@ -37,6 +37,9 @@ h1 {
     font-size: 8em;
     letter-spacing: -2px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background: rgb(34,193,195);
     background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     -webkit-background-clip: text;
@@ -48,16 +51,138 @@ h2 {
     letter-spacing: -2px;
     text-align: center;
     background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(234, 162, 8) 100%);
+    background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(123, 5, 5, 0.655) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-size: 3em;
+    letter-spacing: -2px;
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(123, 5, 5, 0.162) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    font-size: 3em;
+    letter-spacing: -2px;
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(123, 5, 5, 0.162) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h5 {
+    font-size: 3em;
+    letter-spacing: -2px;
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(123, 5, 5, 0.162) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h6 {
+    font-size: 3em;
+    letter-spacing: -2px;
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(123, 5, 5, 0.162) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 3em;
+    letter-spacing: -2px;
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(123, 5, 5, 0.162) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+li {
+    font-size: 2em;
+    letter-spacing: -2px;
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(239, 5, 5, 0.84) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 616px) {
+  header {
+    background: #2D3142;
+    display: block;
+    padding: 0;
+  }
+  header ul li {
+    display: block;
+    border-top: 1px solid #2D3142;
+  }
+
+  header h1 {
+    padding: 20px;
+  }
+  table {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    background: #2D3142;
+    color: #011936;
+  }
+  table {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background: #2D3142;
+  }
+  table {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    background: #2D3142;
+    color: #C2EABD;
+  }
+  table {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    background: #2D3142;
+  }
+  table {
+    width: 100%;
+    display: block;
+  }
 }
 
 .container {
  display: grid;
  align-items: center; 
  grid-template-columns: 1fr 1fr 1fr;
- column-gap: 5px;
+ column-gap: 7px;
 }
 
 img {
